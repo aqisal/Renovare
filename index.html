@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RENOVARE: Precision Project Management & Sustainable Design</title>
+    <!-- Load Tailwind CSS and Inter Font -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* BASE STYLES & FONT */
+        body { font-family: 'Inter', sans-serif; }
+        /* Ultra Dark Background */
+        .bg-project-dark { background-color: #0A0A0A; } 
+        /* Secondary Accent Background */
+        .bg-card-dark { background-color: #161616; }
+        /* Orange/Rust Accent Color (High-Energy Contrast) */
+        .text-accent { color: #FF9900; }
+        .border-accent { border-color: #FF9900; }
+        .bg-accent { background-color: #FF9900; }
+
+        /* HERO SECTION STYLING */
+        .hero-section {
+            background-image: url('https://placehold.co/1920x900/1C1C1C/707070?text=High-End+Emaar+Interior+Render');
+            background-size: cover;
+            background-position: center;
+            min-height: 90vh; /* Dramatically increased height */
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        /* Subtle transparent gradient to make text pop */
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(10, 10, 10, 0.7); /* Dark overlay */
+            z-index: 0;
+        }
+        .cta-button-lg {
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 5px 25px rgba(255, 153, 0, 0.5);
+        }
+        .cta-button-lg:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(255, 153, 0, 0.8);
+        }
+
+        /* CARD Hover Effect */
+        .stat-card {
+            transition: all 0.3s ease;
+            transform: scale(1);
+        }
+        .stat-card:hover {
+            transform: scale(1.02);
+            border-color: #FF9900;
+        }
+
+        /* Utility for the user's white logo */
+        .logo-text {
+            color: white;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+        }
+        .logo-icon {
+            /* Placeholder for user's complex globe logo image */
+            width: 32px;
+            height: 32px;
+            filter: invert(100%); /* Ensure image is visible on dark background */
+        }
+    </style>
+</head>
+<body class="bg-project-dark text-gray-200 antialiased">
+
+    <!-- Header (Minimalist Navigation) -->
+    <header class="bg-project-dark border-b border-gray-800 sticky top-0 z-50">
+        <div class="container mx-auto px-6 h-20 flex justify-between items-center">
+            <!-- Logo (Replicated User's Aesthetic: White on Black) -->
+            <a href="#hero" class="flex items-center space-x-3">
+                <!-- Placeholder for the user's intricate globe logo -->
+                <img class="logo-icon" src="logo without background.png" alt="Renovare Icon" onerror="this.onerror=null; this.src='https://placehold.co/32x32/161616/FF9900?text=RE';" />
+                <span class="logo-text">RENOVARE</span>
+            </a>
+            <!-- Minimal Navigation -->
+            <nav class="space-x-8 text-sm font-medium">
+                <a href="#expertise" class="text-gray-400 hover:text-accent transition-colors">Expertise</a>
+                <a href="#projects" class="text-gray-400 hover:text-accent transition-colors">Portfolio</a>
+                <a href="#contact" class="px-5 py-2 text-sm bg-accent text-project-dark rounded-lg font-semibold hover:bg-white transition-colors">
+                    Request Quote
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 1. HERO SECTION (High-Impact Statement) -->
+    <section id="hero" class="hero-section">
+        <div class="container mx-auto px-6 relative z-10 max-w-6xl">
+            <h1 class="text-7xl font-extrabold text-white mb-6 leading-snug tracking-tighter">
+                ENGINEERING DISCIPLINE. <br> DELIVERING THE UNCOMPROMISING.
+            </h1>
+            <p class="text-2xl text-gray-300 mb-10 max-w-3xl font-light border-l-4 border-accent pl-4">
+                We merge **Civil Engineering** precision with **MBA** commercial control. Renovare guarantees structured execution, validated quality, and financial transparency on every high-stakes project in Karachi and beyond.
+            </p>
+            <a href="#contact" class="cta-button-lg inline-block px-12 py-5 bg-accent text-black text-xl font-bold rounded-xl uppercase tracking-wider hover:bg-white">
+                INITIATE PROJECT FEASIBILITY $\rightarrow$
+            </a>
+        </div>
+    </section>
+
+    <!-- 2. FOUNDER'S CREDIBILITY (Immediate Trust Signal) -->
+    <section class="py-16 bg-card-dark border-t border-b border-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                <div class="text-gray-300">
+                    <p class="text-4xl font-extrabold text-accent">PMP</p>
+                    <p class="text-sm uppercase tracking-wider mt-1">Certified Execution</p>
+                </div>
+                <div class="text-gray-300">
+                    <p class="text-4xl font-extrabold text-accent">Emaar</p>
+                    <p class="text-sm uppercase tracking-wider mt-1">Large-Scale Project Experience</p>
+                </div>
+                <div class="text-gray-300">
+                    <p class="text-4xl font-extrabold text-accent">IoBM</p>
+                    <p class="text-sm uppercase tracking-wider mt-1">Faculty & Academic Rigor</p>
+                </div>
+                <div class="text-gray-300">
+                    <p class="text-4xl font-extrabold text-accent">JOINERY</p>
+                    <p class="text-sm uppercase tracking-wider mt-1">Interwood Mobel Specialist</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. PILLARS OF EXPERTISE -->
+    <section id="expertise" class="py-24 bg-project-dark">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-white tracking-tight">THE THREE-PHASE RENOVARE PROCESS</h2>
+
+            <div class="grid lg:grid-cols-3 gap-10">
+                
+                <!-- Pillar 1: Feasibility -->
+                <div class="stat-card bg-card-dark p-8 rounded-xl border border-gray-800">
+                    <div class="text-5xl font-black text-accent mb-4">01.</div>
+                    <h3 class="text-2xl font-semibold text-white mb-4">FEASIBILITY & OPTIMIZATION</h3>
+                    <p class="text-gray-400 mb-4 font-light">We neutralize risk before site mobilization.</p>
+                    <ul class="text-gray-300 space-y-3 text-sm">
+                        <li class="flex items-start"><span class="text-accent mr-2 mt-1">&#10003;</span> **BIM/CAD Integration:** Digital clash detection and dimension verification.</li>
+                        <li class="flex items-start"><span class="text-accent mr-2 mt-1">&#10003;</span> **Value Engineering:** Cost-reduction review without sacrificing material performance.</li>
+                        <li class="flex items-start"><span class="text-accent mr-2 mt-1">&#10003;</span> **Sustainable Sourcing:** Selection of durable, long-term, energy-efficient components.</li>
+                    </ul>
+                </div>
+
+                <!-- Pillar 2: Execution -->
+                <div class="stat-card bg-card-dark p-8 rounded-xl border border-gray-800">
+                    <div class="text-5xl font-black text-accent mb-4">02.</div>
+                    <h3 class="text-2xl font-semibold text-white mb-4">PROJECT CONTROL & EXECUTION</h3>
+                    <p class="text-gray-400 mb-4 font-light">Maintaining rigid adherence to timeline and budget targets.</p>
+                    <ul class="text-gray-300 space-y-3 text-sm">
+                        <li class="flex items-start"><span class="text-accent mr-2 mt-1">&#10003;</span> **IR Tracking/Mitigation:** Proactive management of Information Requests and RFI backlog.</li>
+                        <li class="flex items-start"><span class="text-accent mr-2 mt-1">&#10003;</span> **Transparent Reporting:** Weekly structured updates (PCL standard) to all stakeholders.</li>
+                        <li class="flex items-start"><span class="text-accent mr-2 mt-1">&#10003;</span> **Site Coordination:** Managing multi-disciplinary teams for zero-downtime efficiency.</li>
+                    </ul>
+                </div>
+
+                <!-- Pillar 3: Handover -->
+                <div class="stat-card bg-card-dark p-8 rounded-xl border border-gray-800">
+                    <div class="text-5xl font-black text-accent mb-4">03.</div>
+                    <h3 class="text-2xl font-semibold text-white mb-4">QUALITY & CLOSURE (QA)</h3>
+                    <p class="text-gray-400 mb-4 font-light">Delivering a verified, final product that stands the test of time.</p>
+                    <ul class="text-gray-300 space-y-3 text-sm">
+                        <li class="flex items-start"><span class="text-accent mr-2 mt-1">&#10003;</span> **Multi-Point QA:** Zero-tolerance system for de-snagging and defect resolution.</li>
+                        <li class="flex items-start"><span class="text-accent mr-2 mt-1">&#10003;</span> **Digital Handover:** Complete documentation package (Warranties, Maintenance Logs).</li>
+                        <li class="flex items-start"><span class="text-accent mr-2 mt-1">&#10003;</span> **Post-Installation Support:** Clear service call protocols and long-term client support.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FOUNDER'S STATEMENT (Authority Quote) -->
+    <section class="py-24 bg-card-dark border-t border-gray-800">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+             <h3 class="text-4xl font-light italic text-gray-300 mb-8 leading-snug">
+                "Our commitment is to disciplined project management. We deliver projects that are not just finished, but **professionally closed** and built for the long-term cost and environmental impact."
+            </h3>
+            <p class="text-accent font-bold text-lg">— Aqib Saleem, Founder</p>
+            <p class="text-gray-500 text-sm">Civil Engineer $\cdot$ MBA $\cdot$ Visiting Faculty, IoBM</p>
+        </div>
+    </section>
+    
+    <!-- 5. CONTACT & FINAL CTA -->
+    <section id="contact" class="py-24 bg-project-dark border-t border-gray-800">
+        <div class="container mx-auto px-6 text-center max-w-xl">
+            <h2 class="text-4xl font-bold text-white mb-6">INITIATE YOUR CONSULTATION</h2>
+            <p class="text-lg text-gray-400 mb-10">
+                Provide your project scope. We deliver a structured proposal and feasibility report within 72 hours.
+            </p>
+
+            <a href="mailto:info@renovareprojects.com" class="cta-button-lg inline-block px-12 py-5 bg-accent text-black text-xl font-bold rounded-xl uppercase tracking-wider hover:bg-white">
+                REQUEST FEASIBILITY REPORT NOW
+            </a>
+
+            <div class="mt-12 pt-6 border-t border-gray-800 text-gray-500">
+                <p class="text-sm">Service Area: Karachi, Pakistan | Available for International Remote Consultancy</p>
+                <p class="text-sm mt-1">Direct Contact: **[Your Professional WhatsApp Number Here]**</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-card-dark py-4">
+        <div class="container mx-auto px-6 text-center text-xs text-gray-600">
+            &copy; 2025 Renovare Projects. | Design, Renovation, and Sustainable Construction Management.
+        </div>
+    </footer>
+
+</body>
+</html>
