@@ -3,29 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RENOVARE: Precision Project Management & Sustainable Design</title>
+    <title>RENOVARE PROJECTS: Precision Project Management & Sustainable Design</title>
     <!-- Load Tailwind CSS and Inter Font -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <style>
         /* BASE STYLES & FONT */
         body { font-family: 'Inter', sans-serif; }
-        /* Ultra Dark Background */
         .bg-project-dark { background-color: #0A0A0A; } 
-        /* Secondary Accent Background */
         .bg-card-dark { background-color: #161616; }
-        /* Orange/Rust Accent Color (High-Energy Contrast) */
         .text-accent { color: #FF9900; }
         .border-accent { border-color: #FF9900; }
         .bg-accent { background-color: #FF9900; }
-
         /* HERO SECTION STYLING */
         .hero-section {
-            /* Using a clean placeholder image URL for fast loading and mobile optimization */
-            background-image: url('https://placehold.co/1920x900/1C1C1C/707070?text=High-End+Joinery+And+Renovation+Showcase');
+            background-image: url('https://placehold.co/1920x900/1C1C1C/707070?text=Premium+Interior+Fitout+and+Joinery+Excellence');
             background-size: cover;
             background-position: center;
-            min-height: 90vh; 
+            min-height: 90vh;
             display: flex;
             align-items: center;
             position: relative;
@@ -56,6 +51,10 @@
             transform: scale(1.02);
             border-color: #FF9900;
         }
+        .portfolio-link:hover .portfolio-text {
+            color: #FF9900; 
+            text-shadow: 0 0 5px rgba(255, 153, 0, 0.5);
+        }
     </style>
 </head>
 <body class="bg-project-dark text-gray-200 antialiased">
@@ -64,14 +63,11 @@
     <header class="bg-project-dark border-b border-gray-800 sticky top-0 z-50">
         <div class="container mx-auto px-6 h-20 flex justify-between items-center">
             
-            <!-- Logo - SIMPLE SVG ICON + TEXT -->
+            <!-- Logo - Uses uploaded file name -->
             <a href="#hero" class="flex items-center space-x-3 z-10">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="10" />
-                    <line x1="2.1" y1="12" x2="21.9" y2="12" />
-                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                </svg>
-                <div class="text-white text-xl font-bold tracking-widest uppercase">RENOVARE</div>
+                <img src="https://raw.githubusercontent.com/aqisal/renovare/main/renovare_logo.png" 
+                     alt="Renovare Projects Logo" 
+                     class="h-10 w-auto">
             </a>
             
             <!-- Contact Button -->
@@ -89,7 +85,7 @@
                 PRECISION EXECUTION.<br>SUSTAINABLE <span class="text-accent">DELIVERY.</span>
             </h1>
             <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto md:mx-0 mb-10">
-                We bridge technical mastery with commercial strategy. As a Civil Engineer and MBA, our leadership ensures zero-compromise quality on high-stakes projects like Emaar South Tower.
+                We bridge technical mastery with commercial strategy. Our leadership ensures **zero-compromise quality** on high-stakes projects, leveraging a Civil Engineering and MBA foundation.
             </p>
             <div class="flex flex-col md:flex-row items-center justify-center md:justify-start space-y-4 md:space-y-0 md:space-x-6">
                 <a href="mailto:info@renovareprojects.com" class="cta-button-lg bg-accent text-black font-extrabold py-4 px-10 rounded-lg text-lg uppercase tracking-wider">
@@ -111,27 +107,27 @@
                 <!-- Pillar 1 -->
                 <div class="stat-card border border-gray-800 p-8 rounded-xl hover:border-accent">
                     <div class="text-accent text-4xl font-extrabold mb-4">01.</div>
-                    <h3 class="text-xl font-bold text-white mb-3">STRATEGIC DESIGN & FEASIBILITY</h3>
+                    <h3 class="text-xl font-bold text-white mb-3">ARCHITECTURAL DETAIL & MEP PLANNING</h3>
                     <p class="text-gray-400 text-base">
-                        **Integrated BIM/CAD Consultation:** Design review for material optimization, cost-reduction, and project feasibility verification. Focus on future-proofing every structure.
+                        Integrated design review for material optimization, detailed **Electrical/Plumbing Layouts**, and seamless integration of structural drawings from concept to execution.
                     </p>
                 </div>
                 
                 <!-- Pillar 2 -->
                 <div class="stat-card border border-gray-800 p-8 rounded-xl hover:border-accent">
                     <div class="text-accent text-4xl font-extrabold mb-4">02.</div>
-                    <h3 class="text-xl font-bold text-white mb-3">STRUCTURED PROJECT CONTROL</h3>
+                    <h3 class="text-xl font-bold text-white mb-3">ADVANCED JOINERY & INTERIORS</h3>
                     <p class="text-gray-400 text-base">
-                        We apply PMP methodologies for rigorous **scheduling, RFI/IR tracking, and risk mitigation**. Guaranteed predictability in volatile environments, ensuring delivery on time and budget.
+                        Specialization in high-end fit-out and joinery details (Interwood expertise). Meticulous execution of false ceiling designs, wooden paneling, and luxurios living spaces.
                     </p>
                 </div>
                 
                 <!-- Pillar 3 -->
                 <div class="stat-card border border-gray-800 p-8 rounded-xl hover:border-accent">
                     <div class="text-accent text-4xl font-extrabold mb-4">03.</div>
-                    <h3 class="text-xl font-bold text-white mb-3">SUSTAINABLE & Meticulous QA</h3>
+                    <h3 class="text-xl font-bold text-white mb-3">PROJECT MANAGEMENT & QA</h3>
                     <p class="text-gray-400 text-base">
-                        Value-Engineered materials (Interwood expertise) and strict **multi-point QA protocols**. Meticulous de-snagging and comprehensive handover documentation for absolute client clarity.
+                        Application of PMP methodologies for risk mitigation, quality assurance (QA), and comprehensive handover, ensuring project completion on time and budget.
                     </p>
                 </div>
                 
@@ -139,7 +135,7 @@
         </div>
     </section>
 
-    <!-- 3. TRUST SECTION: Technical Expertise -->
+    <!-- 3. TRUST SECTION: Portfolio Highlights (Using Thekaydaar Data) -->
     <section id="trust" class="py-16 md:py-24">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -147,31 +143,38 @@
                 <div class="order-2 lg:order-1">
                     <p class="text-accent uppercase tracking-widest mb-3 font-semibold">Our Proven Track Record</p>
                     <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">
-                        PROJECT HIGHLIGHTS: <br>COMPLEXITY MANAGED.
+                        LEGACY OF <span class="text-accent">SUCCESSFUL PROJECTS</span> NOW UNDER RENOVARE.
                     </h2>
                     <p class="text-lg text-gray-400 mb-6 max-w-lg">
-                        Our confidence is built on successful navigation of high-stakes environments, from leading large-scale residential projects to optimizing high-end joinery installation across multiple sites.
+                        We leverage over half a decade of excellence in construction and architecture from our founding vision. Our past execution spans complex commercial, residential, and institutional projects across Pakistan.
                     </p>
                     
                     <div class="space-y-6 border-l-4 border-accent pl-6 py-2">
                         <div class="text-white">
-                            <p class="font-bold text-xl">EMAAAR SOUTH TOWER INSTALLATION</p>
-                            <p class="text-gray-400 text-sm">Managed the installation, coordination, and QA response for over 180+ high-end residential units in Karachi, working closely with PCL and consultants under tight deadlines.</p>
+                            <p class="font-bold text-xl">DADABHOY UNIVERSITY CAMPUS</p>
+                            <p class="text-gray-400 text-sm">Large-scale institutional project requiring complex structural planning, civil engineering oversight, and detailed architectural integration to meet educational campus standards.</p>
                         </div>
                         <div class="text-white">
-                            <p class="font-bold text-xl">ADVANCED JOINERY & MATERIAL OPTIMIZATION</p>
-                            <p class="text-gray-400 text-sm">Leveraging deep technical experience in high-end materials (Interwood), ensuring precise fabrication quality and site integration that minimizes waste and maximizes durability.</p>
+                            <p class="font-bold text-xl">HASEEN VILLA (Karachi) & ORCHARD HOUSE (Islamabad)</p>
+                            <p class="text-gray-400 text-sm">Managed full-scope design and G+1 construction projects (240-350 Sq. Yd. Bungalows), covering Mediterranean façades, groove walls, and integrated structural drawings.</p>
                         </div>
                         <div class="text-white">
-                            <p class="font-bold text-xl">SUSTAINABILITY CONSULTING</p>
-                            <p class="text-gray-400 text-sm">Advisor on efficient home solutions, including solar systems and low-energy consumption design, ensuring client investment yields long-term operational cost savings.</p>
+                            <p class="font-bold text-xl">COMMERCIAL & RESIDENTIAL MIX (SITARA)</p>
+                            <p class="text-gray-400 text-sm">Executed a complex 180 Sq. Yd., G+3 commercial-cum-residential building in Karachi, featuring tall concrete stairways, steel, concrete, and glass elements.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Placeholder Image for Portfolio -->
-                <div class="order-1 lg:order-2 rounded-xl overflow-hidden shadow-2xl">
-                    <img src="https://placehold.co/800x600/161616/FF9900?text=View+Our+Portfolio" alt="High-end renovation interior showcase" class="w-full h-auto object-cover">
+                <!-- Portfolio Link Image Block - Now links directly to the PDF file -->
+                <div class="order-1 lg:order-2 rounded-xl overflow-hidden shadow-2xl relative group">
+                    <img src="https://placehold.co/800x600/1C1C1C/FF9900?text=CLICK+TO+VIEW+PORTFOLIO+PDF" alt="Architectural structural design blueprints" class="w-full h-auto object-cover transition duration-300 group-hover:opacity-80">
+                    
+                    <!-- Overlay link to open the PDF in a new tab -->
+                    <a href="uploaded:company protfolio 2.print.pdf" target="_blank" class="portfolio-link absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 transition duration-300">
+                        <span class="portfolio-text text-white text-2xl font-extrabold uppercase tracking-widest transition duration-300">
+                            View 5-Year Legacy
+                        </span>
+                    </a>
                 </div>
                 
             </div>
@@ -184,15 +187,13 @@
             
             <!-- Footer Logo/Brand -->
             <div>
-                <a href="#hero" class="flex items-center space-x-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10" />
-                        <line x1="2.1" y1="12" x2="21.9" y2="12" />
-                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                    </svg>
-                    <div class="text-white text-xl font-bold tracking-widest uppercase">RENOVARE PROJECTS</div>
+                 <a href="#hero" class="flex items-center space-x-3">
+                    <img src="https://raw.githubusercontent.com/aqisal/renovare/main/renovare_logo.png" 
+                         alt="Renovare Projects Logo" 
+                         class="h-10 w-auto">
                 </a>
-                <p class="text-gray-500 text-sm mt-2">Engineering & Design Solutions.</p>
+                <p class="text-gray-500 text-sm mt-2">Suite 7B/1, Westland Trade Center, Main Shahrah-e-Faisal, Karachi, Pakistan</p>
+                <p class="text-gray-500 text-sm mt-1">Engineering & Design Solutions.</p>
             </div>
             
             <!-- Contact Information -->
@@ -206,16 +207,16 @@
                     <span class="text-accent">Email:</span> 
                     <a href="mailto:info@renovareprojects.com" class="hover:text-white transition duration-300">info@renovareprojects.com</a>
                 </p>
-                <p class="text-gray-400 mt-2 text-sm">Karachi, Sindh, Pakistan</p>
             </div>
             
-            <!-- Legal/Links -->
+            <!-- Social & Links -->
             <div>
-                <h4 class="text-lg font-bold text-white mb-4">STRATEGIC LINKS</h4>
+                <h4 class="text-lg font-bold text-white mb-4">CONNECT & LEGACY</h4>
                 <ul class="space-y-2">
+                    <li><a href="https://www.instagram.com/TheRenovare" target="_blank" class="text-gray-400 hover:text-accent transition duration-300 text-sm">Instagram: @TheRenovare</a></li>
+                    <li><a href="https://www.facebook.com/TheRenovare" target="_blank" class="text-gray-400 hover:text-accent transition duration-300 text-sm">Facebook: The Renovare</a></li>
                     <li><a href="https://www.linkedin.com/in/aqibsaleem-pk" target="_blank" class="text-gray-400 hover:text-accent transition duration-300 text-sm">Aqib Saleem - LinkedIn Profile</a></li>
                     <li><a href="#trust" class="text-gray-400 hover:text-accent transition duration-300 text-sm">Our Project Methodology</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-accent transition duration-300 text-sm">Request Site Visit</a></li>
                 </ul>
             </div>
         </div>
