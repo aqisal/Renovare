@@ -10,21 +10,26 @@
     <style>
         /* BASE STYLES & FONT */
         body { font-family: 'Inter', sans-serif; }
+        /* Ultra Dark Background */
         .bg-project-dark { background-color: #0A0A0A; } 
+        /* Secondary Accent Background */
         .bg-card-dark { background-color: #161616; }
+        /* Orange/Rust Accent Color (High-Energy Contrast) */
         .text-accent { color: #FF9900; }
         .border-accent { border-color: #FF9900; }
         .bg-accent { background-color: #FF9900; }
-        /* HERO SECTION STYLING */
+
+        /* HERO SECTION STYLING: Optimized for Mobile/Desktop */
         .hero-section {
-            background-image: url('https://placehold.co/1920x900/1C1C1C/707070?text=Premium+Interior+Fitout+and+Joinery+Excellence');
+            background-image: url('https://placehold.co/1920x900/1C1C1C/707070?text=Elite+Project+Management+and+Structural+Excellence');
             background-size: cover;
             background-position: center;
-            min-height: 90vh;
+            min-height: 90vh; /* Dramatically increased height */
             display: flex;
             align-items: center;
             position: relative;
         }
+        /* Subtle transparent gradient to make text pop */
         .hero-section::before {
             content: "";
             position: absolute;
@@ -32,7 +37,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(10, 10, 10, 0.75); 
+            background: rgba(10, 10, 10, 0.75); /* Dark overlay */
             z-index: 0;
         }
         .cta-button-lg {
@@ -43,6 +48,7 @@
             transform: translateY(-2px);
             box-shadow: 0 8px 30px rgba(255, 153, 0, 0.8);
         }
+        /* CARD Hover Effect */
         .stat-card {
             transition: all 0.3s ease;
             transform: scale(1);
@@ -63,11 +69,11 @@
     <header class="bg-project-dark border-b border-gray-800 sticky top-0 z-50">
         <div class="container mx-auto px-6 h-20 flex justify-between items-center">
             
-            <!-- Logo - Uses uploaded file name -->
+            <!-- Logo - Uses uploaded file name and increased size (h-16) -->
             <a href="#hero" class="flex items-center space-x-3 z-10">
                 <img src="https://raw.githubusercontent.com/aqisal/renovare/main/renovare_logo.png" 
                      alt="Renovare Projects Logo" 
-                     class="h-10 w-auto">
+                     class="h-16 w-auto"> <!-- Increased to h-16 for better visibility -->
             </a>
             
             <!-- Contact Button -->
@@ -135,7 +141,7 @@
         </div>
     </section>
 
-    <!-- 3. TRUST SECTION: Portfolio Highlights (Using Thekaydaar Data) -->
+    <!-- 3. TRUST SECTION: Portfolio Highlights (Direct Link to Portfolio Page) -->
     <section id="trust" class="py-16 md:py-24">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -149,30 +155,20 @@
                         We leverage over half a decade of excellence in construction and architecture from our founding vision. Our past execution spans complex commercial, residential, and institutional projects across Pakistan.
                     </p>
                     
-                    <div class="space-y-6 border-l-4 border-accent pl-6 py-2">
-                        <div class="text-white">
-                            <p class="font-bold text-xl">DADABHOY UNIVERSITY CAMPUS</p>
-                            <p class="text-gray-400 text-sm">Large-scale institutional project requiring complex structural planning, civil engineering oversight, and detailed architectural integration to meet educational campus standards.</p>
-                        </div>
-                        <div class="text-white">
-                            <p class="font-bold text-xl">HASEEN VILLA (Karachi) & ORCHARD HOUSE (Islamabad)</p>
-                            <p class="text-gray-400 text-sm">Managed full-scope design and G+1 construction projects (240-350 Sq. Yd. Bungalows), covering Mediterranean façades, groove walls, and integrated structural drawings.</p>
-                        </div>
-                        <div class="text-white">
-                            <p class="font-bold text-xl">COMMERCIAL & RESIDENTIAL MIX (SITARA)</p>
-                            <p class="text-gray-400 text-sm">Executed a complex 180 Sq. Yd., G+3 commercial-cum-residential building in Karachi, featuring tall concrete stairways, steel, concrete, and glass elements.</p>
-                        </div>
-                    </div>
+                    <!-- Link to your new portfolio.html page -->
+                    <a href="portfolio.html" class="cta-button-lg bg-gray-700 text-white font-extrabold py-3 px-8 rounded-lg text-lg uppercase tracking-wider hover:bg-gray-600 transition duration-300 shadow-lg">
+                        VIEW FULL LEGACY PORTFOLIO
+                    </a>
                 </div>
 
-                <!-- Portfolio Link Image Block - Now links directly to the PDF file -->
+                <!-- Portfolio Link Image Block - Links to PDF for download -->
                 <div class="order-1 lg:order-2 rounded-xl overflow-hidden shadow-2xl relative group">
-                    <img src="https://placehold.co/800x600/1C1C1C/FF9900?text=CLICK+TO+VIEW+PORTFOLIO+PDF" alt="Architectural structural design blueprints" class="w-full h-auto object-cover transition duration-300 group-hover:opacity-80">
+                    <img src="https://placehold.co/800x600/1C1C1C/FF9900?text=PROJECT+LEGACY" alt="Architectural structural design blueprints" class="w-full h-auto object-cover transition duration-300 group-hover:opacity-80">
                     
                     <!-- Overlay link to open the PDF in a new tab -->
                     <a href="uploaded:company protfolio 2.print.pdf" target="_blank" class="portfolio-link absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 transition duration-300">
                         <span class="portfolio-text text-white text-2xl font-extrabold uppercase tracking-widest transition duration-300">
-                            View 5-Year Legacy
+                            Download Project PDF
                         </span>
                     </a>
                 </div>
@@ -216,7 +212,7 @@
                     <li><a href="https://www.instagram.com/TheRenovare" target="_blank" class="text-gray-400 hover:text-accent transition duration-300 text-sm">Instagram: @TheRenovare</a></li>
                     <li><a href="https://www.facebook.com/TheRenovare" target="_blank" class="text-gray-400 hover:text-accent transition duration-300 text-sm">Facebook: The Renovare</a></li>
                     <li><a href="https://www.linkedin.com/in/aqibsaleem-pk" target="_blank" class="text-gray-400 hover:text-accent transition duration-300 text-sm">Aqib Saleem - LinkedIn Profile</a></li>
-                    <li><a href="#trust" class="text-gray-400 hover:text-accent transition duration-300 text-sm">Our Project Methodology</a></li>
+                    <li><a href="portfolio.html" class="text-gray-400 hover:text-accent transition duration-300 text-sm">View Full Portfolio Page</a></li>
                 </ul>
             </div>
         </div>
