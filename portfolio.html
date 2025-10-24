@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RENOVARE: Structural & Elite Design Portfolio</title>
+    <!-- Load Tailwind CSS and Inter Font for consistency -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0A0A0A; }
+        .bg-project-dark { background-color: #0A0A0A; }
+        .bg-card-dark { background-color: #161616; }
+        .text-accent { color: #FF9900; }
+        .border-accent { border-color: #FF9900; }
+        .project-card { 
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+            overflow: hidden; 
+        }
+        .project-card:hover { 
+            transform: translateY(-5px); 
+            box-shadow: 0 15px 30px rgba(255, 153, 0, 0.1); 
+        }
+        .img-placeholder {
+            min-height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            text-align: center;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body class="text-gray-200">
+
+    <!-- Header - Consistent Branding (Linked to Home) -->
+    <header class="bg-project-dark border-b border-gray-800">
+        <div class="container mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3 z-10">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="2.1" y1="12" x2="21.9" y2="12" />
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                </svg>
+                <div class="text-white text-xl font-bold tracking-widest uppercase">RENOVARE PROJECTS</div>
+            </a>
+            <a href="index.html#contact" class="bg-accent text-black font-semibold py-2 px-4 rounded-md hover:bg-opacity-90 transition duration-300 shadow-lg">
+                BACK TO HOME
+            </a>
+        </div>
+    </header>
+    
+    <!-- Hero Banner -->
+    <section class="bg-card-dark border-b border-gray-800 py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl font-extrabold text-white mb-4">OUR PROVEN DESIGN LEGACY</h1>
+            <p class="text-xl text-gray-400 max-w-4xl mx-auto">
+                These projects represent our core expertise across residential, commercial, and institutional sectors, showcasing a mastery of detailed architectural, structural, and interior planning over the last five years.
+            </p>
+        </div>
+    </section>
+
+    <!-- 3. Portfolio Gallery - Architectural Planning -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-accent mb-8 border-b border-gray-800 pb-4">01. Technical & Structural Planning (200 - 600 Sq. Yd.)</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project Card 1: 200 SQ YD LAYOUTS -->
+                <div class="bg-card-dark rounded-xl project-card border border-gray-800">
+                    <div class="img-placeholder bg-gray-900 border-b border-gray-800 text-gray-500">
+                        200 Sq. Yd. Bungalow <br> (Plan, Plumbing, Electrical Layouts)
+                    </div>
+                    <div class="p-6">
+                        <p class="text-sm uppercase text-accent font-semibold">Residential Scale</p>
+                        <h3 class="text-xl font-bold text-white mt-1 mb-2">Plan Layouts & MEP Schematics</h3>
+                        <p class="text-gray-400 text-sm">Detailed planning for electrical, HVAC, and plumbing routing to eliminate site clashes and ensure long-term functionality. **(Replace placeholder with image of the 200 Sq. Yd. layouts)**</p>
+                    </div>
+                </div>
+
+                <!-- Project Card 2: 400 SQ YD ELEVATIONS -->
+                <div class="bg-card-dark rounded-xl project-card border border-gray-800">
+                    <div class="img-placeholder bg-gray-900 border-b border-gray-800 text-gray-500">
+                        400 Sq. Yd. Elevations <br> (Exterior Façade & Sectional Views)
+                    </div>
+                    <div class="p-6">
+                        <p class="text-sm uppercase text-accent font-semibold">Façade & Elevation</p>
+                        <h3 class="text-xl font-bold text-white mt-1 mb-2">Detailed Exterior Design Drawings</h3>
+                        <p class="text-gray-400 text-sm">Precise sectional drawings and elevation views demonstrating complex material transitions and structural detail. **(Replace placeholder with image of the exterior elevation)**</p>
+                    </div>
+                </div>
+                
+                <!-- Project Card 3: 600 SQ YD STRUCTURAL -->
+                <div class="bg-card-dark rounded-xl project-card border border-gray-800">
+                    <div class="img-placeholder bg-gray-900 border-b border-gray-800 text-gray-500">
+                        600 Sq. Yd. Commercial Structural <br> (Foundation & Beam Details)
+                    </div>
+                    <div class="p-6">
+                        <p class="text-sm uppercase text-accent font-semibold">Institutional Scale</p>
+                        <h3 class="text-xl font-bold text-white mt-1 mb-2">Foundation Layout & Column Details</h3>
+                        <p class="text-gray-400 text-sm">Complex structural planning for large projects like Dadabhoy University, showing detailed column, beam, and slab framing layouts. **(Replace placeholder with image of structural plan)**</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Project Gallery - Interior Design & Fit-out -->
+    <section class="py-16 bg-card-dark">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-accent mb-8 border-b border-gray-800 pb-4">02. Elite Interior Design & Joinery Fit-Outs</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project Card 4: Living Room -->
+                <div class="bg-project-dark rounded-xl project-card border border-gray-800">
+                    <div class="img-placeholder bg-gray-900 border-b border-gray-800 text-gray-500">
+                        Luxury Living Room Interior <br> (Page 7/10 of PDF)
+                    </div>
+                    <div class="p-6">
+                        <p class="text-sm uppercase text-accent font-semibold">Residential Luxury</p>
+                        <h3 class="text-xl font-bold text-white mt-1 mb-2">Iconic Living Spaces</h3>
+                        <p class="text-gray-400 text-sm">High-end fit-out demonstrating complex wall paneling, custom lighting designs (Chandelier/IES), and precise furniture placement.</p>
+                    </div>
+                </div>
+
+                <!-- Project Card 5: Master Bedroom -->
+                <div class="bg-project-dark rounded-xl project-card border border-gray-800">
+                    <div class="img-placeholder bg-gray-900 border-b border-gray-800 text-gray-500">
+                        Master Bedroom Interior <br> (Page 8 of PDF)
+                    </div>
+                    <div class="p-6">
+                        <p class="text-sm uppercase text-accent font-semibold">Aesthetic Detailing</p>
+                        <h3 class="text-xl font-bold text-white mt-1 mb-2">False Ceiling & Wall Frame Designs</h3>
+                        <p class="text-gray-400 text-sm">Creation of fantasy and ambiance through decorative wall frames, curtain integration, and intricate false ceiling and lighting systems.</p>
+                    </div>
+                </div>
+                
+                <!-- Project Card 6: Kitchens -->
+                <div class="bg-project-dark rounded-xl project-card border border-gray-800">
+                    <div class="img-placeholder bg-gray-900 border-b border-gray-800 text-gray-500">
+                        Modern Kitchen Interior <br> (Page 11 of PDF)
+                    </div>
+                    <div class="p-6">
+                        <p class="text-sm uppercase text-accent font-semibold">Functional Design</p>
+                        <h3 class="text-xl font-bold text-white mt-1 mb-2">Custom Joinery and Appliance Integration</h3>
+                        <p class="text-gray-400 text-sm">Focus on designing around fun and food, ensuring custom cabinetry, islands, and appliance spaces are maximized for efficiency and modern aesthetics.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Link back to the home page -->
+            <div class="text-center mt-12">
+                <a href="index.html" class="bg-gray-700 text-white font-extrabold py-3 px-8 rounded-lg text-lg uppercase tracking-wider hover:bg-gray-600 transition duration-300 shadow-lg">
+                    Back to Renovare Projects Home
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer - Consistent Branding -->
+    <footer id="contact" class="bg-project-dark border-t border-gray-800 py-6">
+        <div class="container mx-auto px-6 text-center text-gray-600 text-xs">
+            &copy; 2025 Renovare Projects. Built with Precision & Powered by GitHub Pages.
+        </div>
+    </footer>
+</body>
+</html>
