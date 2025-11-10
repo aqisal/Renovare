@@ -21,7 +21,6 @@
 
         /* HERO SECTION STYLING: Optimized for Mobile/Desktop */
         .hero-section {
-            /* Using a high-end, dark interior placeholder for visual proof (Mirrors the quality of the Living Room/Kitchen in the PDF) */
             background-image: url('https://placehold.co/1920x900/1C1C1C/707070?text=Elite+Project+Management+and+Structural+Excellence');
             background-size: cover;
             background-position: center;
@@ -30,7 +29,6 @@
             align-items: center;
             position: relative;
         }
-        /* Subtle transparent gradient to make text pop */
         .hero-section::before {
             content: "";
             position: absolute;
@@ -65,10 +63,10 @@
         /* Fix for mobile text size */
         @media (max-width: 768px) {
             .hero-section h1 {
-                font-size: 3rem; /* Adjusts main headline size for mobile */
+                font-size: 3rem; 
             }
             .hero-section p {
-                font-size: 1.1rem; /* Adjusts body text size for mobile */
+                font-size: 1.1rem; 
             }
         }
     </style>
@@ -79,11 +77,11 @@
     <header class="bg-project-dark border-b border-gray-800 sticky top-0 z-50">
         <div class="container mx-auto px-6 h-20 flex justify-between items-center">
             
-            <!-- Logo - FINAL INTEGRATION AND SIZING FIX -->
+            <!-- Logo - VISIBILITY FIX (Increased size and used uploaded file) -->
             <a href="#hero" class="flex items-center space-x-3 z-10">
-                <img src="https://raw.githubusercontent.com/aqisal/renovare/main/2.png" 
+                <img src="https://raw.githubusercontent.com/aqisal/renovare/main/logo without background.png" 
                      alt="Renovare Projects Logo" 
-                     class="h-10 w-auto"> 
+                     class="h-16 w-auto"> 
             </a>
             
             <!-- Contact Button -->
@@ -165,7 +163,7 @@
                         We leverage over half a decade of excellence in construction and architecture from our founding vision. Our past execution spans complex commercial, residential, and institutional projects across Pakistan.
                     </p>
                     
-                    <!-- CRITICAL LINK FIX: Now correctly links to image_portfolio.html -->
+                    <!-- Link to your new portfolio.html page -->
                     <a href="image_portfolio.html" class="cta-button-lg bg-gray-700 text-white font-extrabold py-3 px-8 rounded-lg text-lg uppercase tracking-wider hover:bg-gray-600 transition duration-300 shadow-lg">
                         VIEW FULL LEGACY IMAGE PORTFOLIO
                     </a>
@@ -194,9 +192,9 @@
             <!-- Footer Logo/Brand -->
             <div>
                  <a href="#hero" class="flex items-center space-x-3">
-                    <img src="https://raw.githubusercontent.com/aqisal/renovare/main/2.png" 
+                    <img src="https://raw.githubusercontent.com/aqisal/renovare/main/logo without background.png" 
                          alt="Renovare Projects Logo" 
-                         class="h-10 w-auto">
+                         class="h-16 w-auto">
                 </a>
                 <p class="text-gray-500 text-sm mt-2">Suite 7B/1, Westland Trade Center, Main Shahrah-e-Faisal, Karachi, Pakistan</p>
                 <p class="text-gray-500 text-sm mt-1">Engineering & Design Solutions.</p>
