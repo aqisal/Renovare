@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RENOVARE: Technical Portfolio Gallery</title>
+    <!-- Load Tailwind CSS and Inter Font -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0A0A0A; }
+        .bg-project-dark { background-color: #0A0A0A; }
+        .bg-card-dark { background-color: #161616; }
+        .text-accent { color: #FF9900; }
+        .gallery-item { 
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+            overflow: hidden; 
+            border: 1px solid #1f2937;
+        }
+        .gallery-item:hover { 
+            transform: scale(1.01); 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3); 
+        }
+        .portfolio-image {
+            width: 100%;
+            height: 300px; /* Standardized height for clean grid layout */
+            object-fit: cover; 
+            filter: grayscale(10%); /* Subtle grayscale for a technical look */
+            transition: filter 0.3s ease;
+        }
+        .portfolio-image:hover {
+            filter: grayscale(0%); /* Full color on hover */
+        }
+        .image-placeholder {
+            min-height: 300px;
+            background-color: #1f2937;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #9ca3af;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="text-gray-200">
+
+    <!-- Header - Consistent Branding -->
+    <header class="bg-project-dark border-b border-gray-800">
+        <div class="container mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3 z-10">
+                <img src="https://raw.githubusercontent.com/aqisal/renovare/main/logo without background.png" 
+                     alt="Renovare Projects Logo" 
+                     class="h-16 w-auto">
+            </a>
+            <a href="index.html" class="bg-accent text-black font-semibold py-2 px-4 rounded-md hover:bg-opacity-90 transition duration-300 shadow-lg">
+                BACK TO HOME
+            </a>
+        </div>
+    </header>
+    
+    <!-- Hero Banner -->
+    <section class="bg-card-dark border-b border-gray-800 py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl font-extrabold text-white mb-4">MASTER PORTFOLIO: DESIGN & EXECUTION</h1>
+            <p class="text-xl text-gray-400 max-w-4xl mx-auto">
+                Structured evidence of our comprehensive capabilities, from raw architectural planning (layouts, elevations) to finalized elite interior fit-outs.
+            </p>
+        </div>
+    </section>
+
+    <!-- 3. GALLERY SECTION: ARCHITECTURAL LAYOUTS -->
+    <section id="layouts" class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-accent mb-8 border-b border-gray-800 pb-4">01. Technical Layouts by Scale (200, 400, 600 Sq. Yds.)</h2>
+            
+            <p class="text-gray-400 mb-6">Each thumbnail represents the quality of planning for various plot sizes. Click to expand drawings.</p>
+
+            <!-- Image Grid Placeholder - Designed for your large volume of drawings -->
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                
+                <!-- Placeholder loop for 6 Layouts -->
+                <a href="#" class="gallery-item rounded-lg">
+                    <div class="image-placeholder">200 YD Layout (A)</div>
+                    <div class="p-3 text-sm font-semibold text-center bg-gray-900 text-gray-400">200 YD Plan Set 1/7</div>
+                </a>
+                <a href="#" class="gallery-item rounded-lg">
+                    <div class="image-placeholder">400 YD Layout (B)</div>
+                    <div class="p-3 text-sm font-semibold text-center bg-gray-900 text-gray-400">400 YD Plan Set 2/7</div>
+                </a>
+                <a href="#" class="gallery-item rounded-lg">
+                    <div class="image-placeholder">600 YD Structural (C)</div>
+                    <div class="p-3 text-sm font-semibold text-center bg-gray-900 text-gray-400">600 YD Structural Plan</div>
+                </a>
+                <a href="#" class="gallery-item rounded-lg">
+                    <div class="image-placeholder">Elevation (D)</div>
+                    <div class="p-3 text-sm font-semibold text-center bg-gray-900 text-gray-400">Exterior Elevation View</div>
+                </a>
+                <a href="#" class="gallery-item rounded-lg">
+                    <div class="image-placeholder">Master Bedroom</div>
+                    <div class="p-3 text-sm font-semibold text-center bg-gray-900 text-gray-400">Master Bedroom Interior</div>
+                </a>
+                <a href="#" class="gallery-item rounded-lg">
+                    <div class="image-placeholder">Kitchen Joinery</div>
+                    <div class="p-3 text-sm font-semibold text-center bg-gray-900 text-gray-400">Modern Kitchen Interior</div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. GALLERY SECTION: SIGNATURE PROJECTS & INTERIORS -->
+    <section id="interiors" class="py-16 bg-card-dark">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-accent mb-8 border-b border-gray-800 pb-4">02. Elite Interior Design & Institutional Mastery</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Placeholder Card 1: Dadabhoy -->
+                <div class="bg-project-dark rounded-xl gallery-item border border-gray-800">
+                    <div class="image-placeholder" style="min-height: 200px;">DADABHOY UNIVERSITY</div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-white">Institutional Project</h3>
+                        <p class="text-gray-400 text-sm">Large-scale structural and architectural planning for educational sector clients.</p>
+                    </div>
+                </div>
+
+                <!-- Placeholder Card 2: Ribaat ul Uloom -->
+                <div class="bg-project-dark rounded-xl gallery-item border border-gray-800">
+                    <div class="image-placeholder" style="min-height: 200px;">RIBAAT UL ULOOM</div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-white">Commercial Exterior</h3>
+                        <p class="text-gray-400 text-sm">600 YD commercial façade design with specialized material integration.</p>
+                    </div>
+                </div>
+
+                <!-- Placeholder Card 3: Drawing/Dining -->
+                <div class="bg-project-dark rounded-xl gallery-item border border-gray-800">
+                    <div class="image-placeholder" style="min-height: 200px;">DRAWING DINING INTERIOR</div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-white">Luxury Dining Fit-out</h3>
+                        <p class="text-gray-400 text-sm">Custom joinery, lighting, and sophisticated material palettes for high-end residential clients.</p>
+                    </div>
+                </div>
+
+                <!-- Placeholder Card 4: Exterior Elevation -->
+                <div class="bg-project-dark rounded-xl gallery-item border border-gray-800">
+                    <div class="image-placeholder" style="min-height: 200px;">EXTERIOR ELEVATION</div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-white">Residential Façade</h3>
+                        <p class="text-gray-400 text-sm">Example of a finished G+1 residential exterior design, blending concrete and groove walls.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Link back to the home page -->
+            <div class="text-center mt-12">
+                <a href="index.html" class="bg-gray-700 text-white font-extrabold py-3 px-8 rounded-lg text-lg uppercase tracking-wider hover:bg-gray-600 transition duration-300 shadow-lg">
+                    Back to Renovare Projects Home
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer - Consistent Branding -->
+    <footer id="contact" class="bg-project-dark border-t border-gray-800 py-6">
+        <div class="container mx-auto px-6 text-center text-gray-600 text-xs">
+            &copy; 2025 Renovare Projects. **Legacy Projects under Renovare Management.**
+        </div>
+    </footer>
+</body>
+</html>
